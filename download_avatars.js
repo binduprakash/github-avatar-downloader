@@ -4,6 +4,7 @@ var fs = require('fs');
 
 var input = process.argv.slice(2);
 
+
 console.log('Welcome to the GitHub Avatar Downloader!');
 
 function getRepoContributors(repoOwner, repoName, cb) {
@@ -33,7 +34,7 @@ function downloadImageByURL(url, filePath) {
        })
        .pipe(fs.createWriteStream(filePath));
 }
-
+if(input.length === 2){
 getRepoContributors(input[0], input[1], function(err, result) {
   console.log("Errors:", err);
   result.forEach(function(contributor){
@@ -42,3 +43,7 @@ getRepoContributors(input[0], input[1], function(err, result) {
     downloadImageByURL(contributor.avatar_url, 'avatars/' + contributor.login + '.jpg')
   });
 });
+}
+else {
+  console.log('error : 2 inputs are required');
+}
