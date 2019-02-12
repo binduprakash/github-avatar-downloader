@@ -1,0 +1,23 @@
+{
+  "name": "github-avatar-downloader",
+  "version": "1.0.0",
+  "description": "## Problem Statement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github-avatar-downloader" {
+    "type": "git",
+    "url": "git+https://github.com/binduprakash/github-avatar-downloader.git"
+  },
+  "author": "binduprakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binduprakash/github-avatar-downloader/issues"
+  },
+  "homepage": "https://github.com/binduprakash/github-avatar-downloader#readme",
+  "keywords": [],
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
